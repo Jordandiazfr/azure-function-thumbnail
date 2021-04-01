@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "myBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "jojotainer/{name}",
+      "connection": "jojostorage_STORAGE"
+    },
+    {
+      "name": "outputBlob",
+      "path": "jojotainer/thumb_{name}",
+      "connection": "jojostorage_STORAGE",
+      "direction": "out",
+      "type": "blob"
+    }
+  ],
+  "scriptFile": "../dist/tsblob/index.js"
+}
