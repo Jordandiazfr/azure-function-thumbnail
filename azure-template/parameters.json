@@ -1,0 +1,60 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionId": {
+            "value": "4398a24f-81d9-469d-8b59-2f51ac63df2d"
+        },
+        "name": {
+            "value": "jojo-thumb"
+        },
+        "location": {
+            "value": "East US"
+        },
+        "hostingPlanName": {
+            "value": "Jojo-service"
+        },
+        "serverFarmResourceGroup": {
+            "value": "JOJO-RG"
+        },
+        "alwaysOn": {
+            "value": false
+        },
+        "storageAccountName": {
+            "value": "jojostorage"
+        },
+        "sku": {
+            "value": "ElasticPremium"
+        },
+        "skuCode": {
+            "value": "EP1"
+        },
+        "workerSize": {
+            "value": "3"
+        },
+        "workerSizeId": {
+            "value": "3"
+        },
+        "numberOfWorkers": {
+            "value": "1"
+        },
+        "use32BitWorkerProcess": {
+            "value": false
+        },
+        "linuxFxVersion": {
+            "value": "DOCKER|mcr.microsoft.com/azure-functions/dotnet:3.0-appservice-quickstart"
+        },
+        "dockerRegistryUrl": {
+            "value": "https://mcr.microsoft.com"
+        },
+        "dockerRegistryUsername": {
+            "value": ""
+        },
+        "dockerRegistryPassword": {
+            "value": null
+        },
+        "dockerRegistryStartupCommand": {
+            "value": ""
+        }
+    }
+}
